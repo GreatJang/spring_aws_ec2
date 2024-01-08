@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 // 서버에서 Access-Control-Allow-Origin 헤더 세팅
 // cord Error에 대한 허용정책
-@Configuration // 주요 어노테이션
+@Configuration // 주요 어노테이션.
 public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry corsRegistry){
