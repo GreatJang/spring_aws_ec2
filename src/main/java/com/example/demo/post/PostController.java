@@ -27,7 +27,7 @@ public class PostController {
 
 
 //    ssr : 사용자에게 화면(+data) return // 같은 프로젝트안에서 호출. 그렇기에 빠름
-    @GetMapping("/ssr") //localhost:8080/csr/json //사용자의 접점 포인트
+    @GetMapping("/ssr") //localhost:8080/ssr //사용자의 접점 포인트
     public String findAllSsr(Model model){
         List<Post> posts = postService.findAll();
         model.addAttribute("posts", posts); //"posts"라는 키에 posts 값을 넣는다. "posts"에 데이터가 들어간다.

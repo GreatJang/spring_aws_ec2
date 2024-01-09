@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Optional;
 public class PostRepository {
     List<Post> posts;
-    PostRepository(){
+    PostRepository(){ //메모리 DB 썼다.
         this.posts = new ArrayList<>();
         this.posts.add(new Post(1, "title1", "hello java world1", "hongildong1"));
         this.posts.add(new Post(2, "title2", "hello java world2", "hongildong2"));
